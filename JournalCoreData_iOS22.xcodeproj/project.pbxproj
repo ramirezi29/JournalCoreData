@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		472B7323216E3AAA00A23283 /* JournalCoreData_iOS22.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 472B7321216E3AAA00A23283 /* JournalCoreData_iOS22.xcdatamodeld */; };
+		472B7325216E3BCE00A23283 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B7324216E3BCE00A23283 /* Entry+Convenience.swift */; };
+		472B7327216E3CAF00A23283 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B7326216E3CAF00A23283 /* CoreDataStack.swift */; };
 		4764714A21658BB10009E339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4764714921658BB10009E339 /* AppDelegate.swift */; };
-		4764714C21658BB10009E339 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4764714B21658BB10009E339 /* ViewController.swift */; };
 		4764714F21658BB10009E339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4764714D21658BB10009E339 /* Main.storyboard */; };
 		4764715121658BB20009E339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4764715021658BB20009E339 /* Assets.xcassets */; };
 		4764715421658BB20009E339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4764715221658BB20009E339 /* LaunchScreen.storyboard */; };
+		47647164216591E20009E339 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47647163216591E20009E339 /* EntryController.swift */; };
+		47647166216593B20009E339 /* EntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47647165216593B20009E339 /* EntryTableViewController.swift */; };
+		47647168216593C20009E339 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47647167216593C20009E339 /* EntryDetailViewController.swift */; };
+		477E754B22062E0A0040DE1B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E754A22062E0A0040DE1B /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4764714621658BB10009E339 /* Journal_iOS22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal_iOS22.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		472B7322216E3AAA00A23283 /* JournalCoreData_iOS22.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JournalCoreData_iOS22.xcdatamodel; sourceTree = "<group>"; };
+		472B7324216E3BCE00A23283 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		472B7326216E3CAF00A23283 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		4764714621658BB10009E339 /* JournalCoreData_iOS22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCoreData_iOS22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4764714921658BB10009E339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4764714B21658BB10009E339 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4764714E21658BB10009E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4764715021658BB20009E339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4764715321658BB20009E339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4764715521658BB20009E339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47647163216591E20009E339 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		47647165216593B20009E339 /* EntryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EntryTableViewController.swift; path = Journal_iOS22/ViewController/EntryTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		47647167216593C20009E339 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		477E754A22062E0A0040DE1B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +58,7 @@
 		4764714721658BB10009E339 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4764714621658BB10009E339 /* Journal_iOS22.app */,
+				4764714621658BB10009E339 /* JournalCoreData_iOS22.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,22 +66,68 @@
 		4764714821658BB10009E339 /* Journal_iOS22 */ = {
 			isa = PBXGroup;
 			children = (
-				4764714921658BB10009E339 /* AppDelegate.swift */,
-				4764714B21658BB10009E339 /* ViewController.swift */,
+				4764715E21658BE40009E339 /* ViewController */,
+				4764715D21658BDE0009E339 /* ModelController */,
+				4764715C21658BD60009E339 /* Model */,
+				4764715B21658BD00009E339 /* UI */,
+				4764716021658C0C0009E339 /* Resources */,
+			);
+			path = Journal_iOS22;
+			sourceTree = "<group>";
+		};
+		4764715B21658BD00009E339 /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				4764714D21658BB10009E339 /* Main.storyboard */,
+				477E754A22062E0A0040DE1B /* File.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4764715C21658BD60009E339 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				472B7326216E3CAF00A23283 /* CoreDataStack.swift */,
+				47647165216593B20009E339 /* EntryTableViewController.swift */,
+				472B7321216E3AAA00A23283 /* JournalCoreData_iOS22.xcdatamodeld */,
+				472B7324216E3BCE00A23283 /* Entry+Convenience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4764715D21658BDE0009E339 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				47647163216591E20009E339 /* EntryController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		4764715E21658BE40009E339 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				47647167216593C20009E339 /* EntryDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4764716021658C0C0009E339 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4764714921658BB10009E339 /* AppDelegate.swift */,
 				4764715021658BB20009E339 /* Assets.xcassets */,
 				4764715221658BB20009E339 /* LaunchScreen.storyboard */,
 				4764715521658BB20009E339 /* Info.plist */,
 			);
-			path = Journal_iOS22;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4764714521658BB10009E339 /* Journal_iOS22 */ = {
+		4764714521658BB10009E339 /* JournalCoreData_iOS22 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4764715821658BB20009E339 /* Build configuration list for PBXNativeTarget "Journal_iOS22" */;
+			buildConfigurationList = 4764715821658BB20009E339 /* Build configuration list for PBXNativeTarget "JournalCoreData_iOS22" */;
 			buildPhases = (
 				4764714221658BB10009E339 /* Sources */,
 				4764714321658BB10009E339 /* Frameworks */,
@@ -79,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = Journal_iOS22;
+			name = JournalCoreData_iOS22;
 			productName = Journal_iOS22;
-			productReference = 4764714621658BB10009E339 /* Journal_iOS22.app */;
+			productReference = 4764714621658BB10009E339 /* JournalCoreData_iOS22.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4764714121658BB10009E339 /* Build configuration list for PBXProject "Journal_iOS22" */;
+			buildConfigurationList = 4764714121658BB10009E339 /* Build configuration list for PBXProject "JournalCoreData_iOS22" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4764714521658BB10009E339 /* Journal_iOS22 */,
+				4764714521658BB10009E339 /* JournalCoreData_iOS22 */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4764714C21658BB10009E339 /* ViewController.swift in Sources */,
+				472B7327216E3CAF00A23283 /* CoreDataStack.swift in Sources */,
+				47647164216591E20009E339 /* EntryController.swift in Sources */,
+				47647166216593B20009E339 /* EntryTableViewController.swift in Sources */,
+				47647168216593C20009E339 /* EntryDetailViewController.swift in Sources */,
+				472B7323216E3AAA00A23283 /* JournalCoreData_iOS22.xcdatamodeld in Sources */,
+				477E754B22062E0A0040DE1B /* File.swift in Sources */,
+				472B7325216E3BCE00A23283 /* Entry+Convenience.swift in Sources */,
 				4764714A21658BB10009E339 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = Journal_iOS22/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Journal_iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = Journal_iOS22/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Journal_iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +381,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4764714121658BB10009E339 /* Build configuration list for PBXProject "Journal_iOS22" */ = {
+		4764714121658BB10009E339 /* Build configuration list for PBXProject "JournalCoreData_iOS22" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4764715621658BB20009E339 /* Debug */,
@@ -326,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4764715821658BB20009E339 /* Build configuration list for PBXNativeTarget "Journal_iOS22" */ = {
+		4764715821658BB20009E339 /* Build configuration list for PBXNativeTarget "JournalCoreData_iOS22" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4764715921658BB20009E339 /* Debug */,
@@ -336,6 +400,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		472B7321216E3AAA00A23283 /* JournalCoreData_iOS22.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				472B7322216E3AAA00A23283 /* JournalCoreData_iOS22.xcdatamodel */,
+			);
+			currentVersion = 472B7322216E3AAA00A23283 /* JournalCoreData_iOS22.xcdatamodel */;
+			path = JournalCoreData_iOS22.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4764713E21658BB10009E339 /* Project object */;
 }
